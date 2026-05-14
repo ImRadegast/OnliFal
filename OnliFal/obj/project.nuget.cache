@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "JVu1e8mQz4o=",
+  "success": true,
+  "projectFilePath": "/home/imradegast/Documents/Dev/C#/OnliFal/OnliFal/OnliFal.csproj",
+  "expectedPackageFiles": [
+    "/home/imradegast/.nuget/packages/microsoft.aspnetcore.app.internal.assets/10.0.4/microsoft.aspnetcore.app.internal.assets.10.0.4.nupkg.sha512",
+    "/home/imradegast/.nuget/packages/microsoft.aspnetcore.app.ref/10.0.4/microsoft.aspnetcore.app.ref.10.0.4.nupkg.sha512"
+  ],
+  "logs": []
+}
