@@ -1,5 +1,16 @@
+@import "tailwindcss";
+
+@font-face{
+    font-family: "Poppins-Regular";
+    src: local('../OnliFal/wwwroot/fonts/Poppins-Regular.ttf');
+}
+@font-face{
+    font-family: "Merriweather";
+    src: local('../OnliFal/wwwroot/fonts/Merriweather-VariableFont_opsz,wdth,wght.ttf');
+}
+
 html, body {
-    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-family: 'Poppins-Regular',cursive;
 }
 
 a, .btn-link {
@@ -21,6 +32,7 @@ a, .btn-link {
 }
 
 h1:focus {
+    font-family: 'Merriweather',cursive;
     outline: none;
 }
 

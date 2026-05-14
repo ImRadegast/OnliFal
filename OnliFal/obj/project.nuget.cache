@@ -1,10 +1,16 @@
 {
   "version": 2,
-  "dgSpecHash": "JVu1e8mQz4o=",
+  "dgSpecHash": "vbFswsQd0ng=",
   "success": true,
-  "projectFilePath": "/home/imradegast/Documents/Dev/C#/OnliFal/OnliFal/OnliFal.csproj",
+  "projectFilePath": "/home/imradegast/Documents/Dev/CSharp/OnliFal/OnliFal/OnliFal.csproj",
   "expectedPackageFiles": [
     "/home/imradegast/.nuget/packages/microsoft.aspnetcore.app.internal.assets/10.0.4/microsoft.aspnetcore.app.internal.assets.10.0.4.nupkg.sha512",
+    "/home/imradegast/.nuget/packages/microsoft.aspnetcore.spaservices.extensions/6.0.1/microsoft.aspnetcore.spaservices.extensions.6.0.1.nupkg.sha512",
+    "/home/imradegast/.nuget/packages/microsoft.extensions.fileproviders.abstractions/6.0.0/microsoft.extensions.fileproviders.abstractions.6.0.0.nupkg.sha512",
+    "/home/imradegast/.nuget/packages/microsoft.extensions.fileproviders.physical/6.0.0/microsoft.extensions.fileproviders.physical.6.0.0.nupkg.sha512",
+    "/home/imradegast/.nuget/packages/microsoft.extensions.filesystemglobbing/6.0.0/microsoft.extensions.filesystemglobbing.6.0.0.nupkg.sha512",
+    "/home/imradegast/.nuget/packages/microsoft.extensions.primitives/6.0.0/microsoft.extensions.primitives.6.0.0.nupkg.sha512",
+    "/home/imradegast/.nuget/packages/tailwind.extensions.aspnetcore/1.1.2/tailwind.extensions.aspnetcore.1.1.2.nupkg.sha512",
     "/home/imradegast/.nuget/packages/microsoft.aspnetcore.app.ref/10.0.4/microsoft.aspnetcore.app.ref.10.0.4.nupkg.sha512"
   ],
   "logs": []

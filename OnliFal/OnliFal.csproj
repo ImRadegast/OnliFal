@@ -7,4 +7,13 @@
         <BlazorDisableThrowNavigationException>true</BlazorDisableThrowNavigationException>
     </PropertyGroup>
 
+    <ItemGroup>
+      <Folder Include="wwwroot\fonts\" />
+      <Folder Include="wwwroot\lib\" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Tailwind.Extensions.AspNetCore" Version="1.1.2" />
+    </ItemGroup>
+
 </Project>
