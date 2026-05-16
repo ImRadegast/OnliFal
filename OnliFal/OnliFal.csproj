@@ -16,4 +16,8 @@
       <PackageReference Include="Tailwind.Extensions.AspNetCore" Version="1.1.2" />
     </ItemGroup>
 
+    <ItemGroup>
+      <None Include="wwwroot\image.jpg" />
+    </ItemGroup>
+
 </Project>
