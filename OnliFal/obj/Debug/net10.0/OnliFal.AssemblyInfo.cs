@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("OnliFal")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+97181e1cc1c3150a4304a14d4eefc34a0e8f1f23")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d61b8b9a9ef5059b04772c3a406c2a3bbeb3b013")]
 [assembly: System.Reflection.AssemblyProductAttribute("OnliFal")]
 [assembly: System.Reflection.AssemblyTitleAttribute("OnliFal")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
