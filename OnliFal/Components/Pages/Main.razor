@@ -1,5 +1,5 @@
 ﻿@page "/"
-
+@rendermode InteractiveServer
 <PageTitle>OnliFAL</PageTitle>
 
 
@@ -14,26 +14,38 @@
       
                 <div class="flex flex-row m-2 gap-2">
                     
-                    <p class="h-fit rounded-lg p-2 bg-cyan-300 w-fit text-center text-black">Apéral</p>
+                    <p id="test" class="h-fit rounded-lg p-2 bg-cyan-300 w-fit text-center text-black">Apéral</p>
                     <p class="h-fit rounded-lg p-2 bg-gray-900 w-fit text-center text-white">Open Bar</p>
                     <p class="h-fit rounded-lg p-2 bg-gray-900 w-fit text-center text-white">Congrès</p>
                     <p class="h-full w-fit  text-center text-gray-800 text-2xl ">|</p>
                     <select class=" h-fit rounded-lg bg-gray-900 p-2  w-45  text-center text-white overflow-clip" name="regions" id="regions">
-                        <option value="" class="">Toutes les regions</option>
-                        <option value="dog">Auvergne-Rhône-Alpes</option>
-                        <option value="cat">Bourgogne-Franche-Comté</option>
-                        <option value="cat">Bretagne</option>
-                        <option value="cat">Centre-Val de Loire</option>
-                        <option value="cat">Corse</option>
-                        <option value="cat">Grand Est</option>
-                        <option value="cat">Hauts-de-France</option>
-                        <option value="cat">Île-de-France</option>
-                        <option value="cat">Normandie</option>
-                        <option value="cat">Nouvelle-Aquitaine</option>
-                        <option value="cat">Occitanie</option>
-                        <option value="cat">Pays de la Loire</option>
-                        <option value="cat">Provence-Alpes-Côte d’Azur</option>
+                        <option value="all" class="">Toutes les regions</option>
+                        <option value="Rhône">Auvergne-Rhône-Alpes</option>
+                        <option value="Bourgogne">Bourgogne-Franche-Comté</option>
+                        <option value="Bretagne">Bretagne</option>
+                        <option value="CentreLoire">Centre-Val de Loire</option>
+                        <option value="Corse">Corse</option>
+                        <option value="GrandEst">Grand Est</option>
+                        <option value="HautsFrance">Hauts-de-France</option>
+                        <option value="ÎleFrance">Île-de-France</option>
+                        <option value="Normandie">Normandie</option>
+                        <option value="Aquitaine">Nouvelle-Aquitaine</option>
+                        <option value="Occitanie">Occitanie</option>
+                        <option value="PaysLoire">Pays de la Loire</option>
+                        <option value="PACA">Provence-Alpes-Côte d’Azur</option>
                     </select>
+                    
+                    <button class="h-fit rounded-lg p-2 bg-gray-900 w-fit text-center text-white"  @onclick="resume" >
+                        @currentCount
+                    </button>
+                    <a class="h-fit rounded-lg p-2 bg-gray-900 w-fit text-center text-white"  href="https://www.youtube.com/watch?v=ec0tHV6JA8c&list=RDec0tHV6JA8c&start_radio=1" >
+                        ytb
+                    </a>
+                    <NavLink class="nav-link" href="CreateEvent">
+                        <button class="h-fit rounded-lg p-2 bg-gray-900 w-fit text-center text-white"   >
+                            CreateEvent
+                        </button>
+                    </NavLink>
                 </div>
             
         

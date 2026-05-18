@@ -25,6 +25,9 @@
 
     <ItemGroup>
       <None Include="wwwroot\image.jpg" />
+      <None Update="Components\Pages\Main.razor.cs">
+        <DependentUpon>Main.razor.razor</DependentUpon>
+      </None>
     </ItemGroup>
 
 </Project>

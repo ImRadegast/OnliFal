@@ -6,26 +6,31 @@ namespace OnliFal.Models;
 public class Event
 {
     
-        [Key] public long EventId { get; set; }
+        [Key] internal long Id { get; set; }
 
-        [Required] [StringLength(100)] private string Name { get; set; }
+        [Required] [StringLength(100)] internal string Name { get; set; }
         
-        [Required] private string Type {get;set;}
+        [Required] internal string Type {get;set;}
                 
-        [Required] [StringLength(2000)] private string Description { get; set; }
+        [Required] [StringLength(2000)] internal string Description { get; set; }
 
-        [Required] [StringLength(100)] private String ImageLink { get; set; }
+        [Required] [StringLength(100)] internal String ImageLink { get; set; }
 
-        [Required] public DateTime StartDate { get; set; }
+        [Required] internal DateTime Date { get; set; }
 
-        private Event(long eventId, string name,string type ,string description, string imageLink, DateTime startDate)
+        public Event(string name,string type ,string description, string imageLink, DateTime date)
         {
-            EventId = eventId;
+            
             Name = name;
             Type = type;
             Description = description;
             ImageLink = imageLink;
-            StartDate = startDate;
+            Date = date;
+        }
+
+        public Event()
+        {
+            
         }
 }
 
