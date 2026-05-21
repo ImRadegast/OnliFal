@@ -1,24 +1,26 @@
 @page "/CreateEvent"
-@using OnliFal.Models
-@inject ILogger<CreateEvent> Logger
+@using Microsoft.EntityFrameworkCore
+@using OnliFal.Components.Models;
+
+@inject IDbContextFactory<AppDbContext> DbFactory 
+@inject NavigationManager NavigationManager
 
 
 
-
-<EditForm Model="Event" method="post" @OnValidSubmit="Submit" FormName="Submit">
-    <AntiforgeryToken />
+<form Model="Event" method="post" @onsubmit="Create" formname="Submit">
+    
     <div>
         <label>
             Identifier: 
-            <select class="h-fit rounded-lg p-2 bg-gray-900 w-fit text-center text-white"   name="regions" id="regions" @bind="Event!.Type">
+            <select class="h-fit rounded-lg p-2 bg-gray-900 w-fit text-center text-white"   name="regions" id="regions" @bind="Evenement.Type">
                 <option value="aperal" class="">Apéral</option>
                 <option value="OB" class="">Open Bar</option>
                 <option value="congres" class="">Congres</option>
             </select>
-            <InputText class="h-fit rounded-lg p-2 bg-gray-900 w-fit text-center text-white" @bind-Value="Event!.Name" />
-            <InputText class="h-fit rounded-lg p-2 bg-gray-900 w-fit text-center text-white"@bind-Value="Event!.Description" />
-            <InputText class="h-fit rounded-lg p-2 bg-gray-900 w-fit text-center text-white"@bind-Value="Event!.ImageLink" />
-            <InputDate class="h-fit rounded-lg p-2 bg-gray-900 w-fit text-center text-white"@bind-Value="Event!.Date" />
+            <InputText class="h-fit rounded-lg p-2 bg-gray-900 w-fit text-center text-white" @bind-Value="Evenement.Name" />
+            <InputText class="h-fit rounded-lg p-2 bg-gray-900 w-fit text-center text-white" @bind-Value="Evenement.Description" />
+            <InputText class="h-fit rounded-lg p-2 bg-gray-900 w-fit text-center text-white" @bind-Value="Evenement.ImageLink" />
+            <InputDate class="h-fit rounded-lg p-2 bg-gray-900 w-fit text-center text-white" @bind-Value="Evenement.Date" />
             
             
             
@@ -27,20 +29,4 @@
     <div>
         <button type="submit">Submit</button>
     </div>
-</EditForm>
-
-@code {
-    
-    private Event? Event { get; set; }
-
-    protected override void OnInitialized() => Event ??= new();
-
-    private void Submit() => Logger.LogInformation(
-        "Name = {Name},Type = {Type},Description = {Description},ImageLink = {ImageLink},Date = {Date}",
-         Event?.Name,
-         Event?.Type, 
-         Event?.Description,
-         Event?.ImageLink,
-         Event?.Date
-         );
-}
+</form>
