@@ -1,0 +1,3 @@
+*.razor.css linguist-language=CSS 
+*.razor linguist-language=C#
+*.razor.cs linguist-language=C#
