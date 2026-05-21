@@ -1,3 +1,4 @@
-*.razor.css linguist-language=CSS 
+*.razor.css linguist-language=CSS linguist-vendored=true
+*.cs linguist-language=C#
 *.razor linguist-language=C#
 *.razor.cs linguist-language=C#
